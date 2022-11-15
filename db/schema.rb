@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190705170235) do
+ActiveRecord::Schema.define(version: 20221013103402) do
 
   create_table "tasks", force: :cascade do |t|
     t.string "name"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20190705170235) do
     t.string "password_digest"
     t.string "remember_digest"
     t.boolean "admin", default: false
+    t.string "line_user_id"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 

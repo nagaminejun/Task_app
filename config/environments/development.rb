@@ -1,4 +1,9 @@
 Rails.application.configure do
+  
+  #config.hosts << '.jp.ngrok.io' #← 追記
+  
+  config.web_console.allowed_ips = '111.239.183.96'
+  
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
